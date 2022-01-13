@@ -1,0 +1,12 @@
+
+include base/_produsts.pug
+include mix/_card.pug
+section.popular
+	.container
+		.popular__inner
+			h2.title
+				span Popular Properties
+			a(href="") VIEW ALL
+		.popular__cards
+			each item, index in info
+				+card(item, index)

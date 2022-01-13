@@ -1,0 +1,13 @@
+-
+	let menu = [
+		{text:'Home',link:'home'},
+		{text:'Properties ',link:'properties'},
+		{text:'About us', link:'aboutUs'},
+		{text:'Blog', link:'blog'}
+	];
+nav.nav
+	ul
+		each item in menu
+			li
+				a(href="#" id=`${item.link}`)= item.text
+	button.btn.btn-big Contact us

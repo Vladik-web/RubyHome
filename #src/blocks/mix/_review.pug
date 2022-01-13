@@ -1,0 +1,10 @@
+mixin review(obj)
+	.review
+		.review__top
+			.review__image
+				img(src= obj.image, alt="obj.image")
+			.review__info
+				h2.review__info-name= obj.name
+				span.review__info-work= obj.work 
+		.review__bottom
+			p.review__bottom-description= obj.description

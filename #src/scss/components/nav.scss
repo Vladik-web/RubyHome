@@ -1,0 +1,26 @@
+.nav {
+  display: flex;
+  align-items: center;
+  ul {
+    display: flex;
+    a {
+      padding: 0 25px;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      color: $text;
+      transition: 0.25s ease;
+      &:hover {
+        color: $prioritet;
+      }
+    }
+    li {
+      &:last-child {
+        a {
+          padding-right: 50px;
+        }
+      }
+    }
+  }
+}

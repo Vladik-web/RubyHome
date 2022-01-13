@@ -1,0 +1,33 @@
+.reviews {
+  padding: 70px 0 140px 0;
+
+  &__inner {
+    text-align: center;
+    margin-bottom: 70px;
+    h2 {
+    }
+  }
+  .slick-dots {
+    margin-top: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    li {
+      button {
+        cursor: pointer;
+        transition: 0.25s ease;
+        width: 12px;
+        height: 12px;
+        font-size: 0;
+        border-radius: 50%;
+        background-color: #ededed;
+      }
+      &.slick-active {
+        button {
+          background-color: $accent;
+        }
+      }
+    }
+  }
+}

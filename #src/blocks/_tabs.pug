@@ -1,0 +1,43 @@
+.tabs.show-top-2
+	.tabs__buttons
+		ul
+			li(data-tab="0").active Buy
+			li(data-tab="1") Rent 
+			li(data-tab="2") Sell
+	.tabs__contents
+		.tabs__contents-item
+			.tabs__contents-item-block
+				button.select Location 
+					img(src="img/icons/arrow-down.svg", alt="arrow")
+				span Dhaka
+				.select-wrapper
+					ul.select-list
+						li a
+						li b
+						li c
+			.line
+			.tabs__contents-item-block
+				button.select Property type
+					img(src="img/icons/arrow-down.svg", alt="arrow")
+				span Duplex
+				.select-wrapper
+					ul.select-list
+						li 1
+						li 2
+						li 3
+			.line
+			.tabs__contents-item-block
+				button.select Price
+					img(src="img/icons/arrow-down.svg", alt="arrow")
+				span $4000-$8000
+				.select-wrapper
+					ul.select-list
+						li 1
+						li 2
+						li 3
+			
+			.tabs__contents-item-block
+				button.btn-def.btn
+					img(src="img/icons/search.svg", alt="search") 
+					| Search
+

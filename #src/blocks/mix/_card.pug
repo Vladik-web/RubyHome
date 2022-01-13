@@ -1,0 +1,31 @@
+
+mixin card(info, index)
+	.card(class=`show-center-scale`)
+		.card__top
+			each item in info.image
+				img(src= item, alt= item)
+		.card__bottom
+			.card__bottom-head
+				h2.card__bottom-title= info.head
+				button.btn.btn-like
+					<svg width="16" height="14" viewBox="0 0 16 14"  xmlns="http://www.w3.org/2000/svg">
+						<path d="M8 14C7.88969 14 7.77981 13.9617 7.69147 13.8847C7.00941 13.2909 6.36075 12.7404 5.75056 12.2227C2.30678 9.30098 0 7.3705 0 4.55821C0 1.95963 1.84491 0 4.25 0C6.14559 0 7.36234 1.31843 8 2.5056C8.63766 1.31843 9.85441 0 11.75 0C14.1551 0 16 1.95963 16 4.55821C16 7.37053 13.6932 9.30098 10.2494 12.2227C9.63925 12.7404 8.99059 13.2909 8.30853 13.8847C8.22019 13.9617 8.11031 14 8 14Z" fill="#BBBBBB"/>
+					</svg>
+
+			.card__bottom-place
+				span
+					img(src="img/icons/point.svg", alt="point")
+					=info.place
+			.card__bottom-appts
+				.appt
+					img(src="img/icons/bad.svg", alt="bad")
+					= info.apps.bad
+				.appt
+					img(src="img/icons/сutlery.svg", alt="cutlery")
+					= info.apps.cutlery
+				.appt
+					img(src="img/icons/bath.svg", alt="bath")
+					= info.apps.bath
+			.card__bottom-price
+				span= info.price
+				a(href=`${info.link}`).btn.btn-def View Details

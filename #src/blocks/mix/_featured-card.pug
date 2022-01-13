@@ -1,0 +1,6 @@
+mixin featured-card(image, title, p)
+	.featured-card(data-tilt-full-page-listening data-tilt-reverse="true" )
+		.featured-card__image
+			img(src= image, alt="")
+		h3.featured-title= title
+		p= p

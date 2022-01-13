@@ -1,0 +1,20 @@
+include mix/_featured-card.pug
+-let path = 'img/icons/'
+section.featured
+	.container
+		.featured__inner
+			.featured__top
+				h2.title
+					span Property Featured
+				p.descr Real estate is a crowded field. But with the number of buyers purchasing homes through real estate agents and brokers growing there’s plenty of 
+			.featured__bottom 
+				.featured__left.show-left-rotate
+					+featured-card(path+'surface.svg', '100% Security', 'For many of us, buying a home is a dre and one not easily attainable. ')
+					+featured-card(path+'cond.svg', 'Free air conditioner', 'For many of us, buying a home is a dre and one not easily attainable. ')
+					+featured-card(path+'green.svg', 'Flower garden', 'For many of us, buying a home is a dre and one not easily attainable. ')
+				.featured__center.show-center-scale
+					img(src='img/intro-image-2.jpg', alt="intro-image" )
+				.featured__right.show-right-rotate
+					+featured-card(path+'car.svg', 'Parkers & movers', 'For many of us, buying a home is a dre and one not easily attainable. ')
+					+featured-card(path+'sofa.svg', 'Rental furniture', 'For many of us, buying a home is a dre and one not easily attainable. ')
+					+featured-card(path+'swimm.svg', 'Swimming pool', 'For many of us, buying a home is a dre and one not easily attainable. ')

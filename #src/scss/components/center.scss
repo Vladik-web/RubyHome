@@ -1,0 +1,43 @@
+.center {
+  margin-top: 75px;
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__left {
+    position: relative;
+    z-index: 10;
+    h1 {
+      font-weight: 600;
+      font-size: 61px;
+      line-height: 120%;
+      max-width: 558px;
+      color: #030a1b;
+      margin-bottom: 30px;
+      background-color: #fff;
+    }
+    p {
+      max-width: 558px;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 27px;
+      color: $text;
+      margin-bottom: 40px;
+    }
+  }
+  &__right {
+    min-height: 615px;
+    position: relative;
+
+    img {
+      border-radius: 10px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      display: block;
+      width: 484px;
+      height: 100%;
+    }
+  }
+}

@@ -1,0 +1,81 @@
+-
+	const pathImage = (name)=>{
+		return `img/icons/${name}.svg`;
+	}
+	let soc = [
+		{
+			alt:'fb',
+			link: '#',
+			img: pathImage('fb')
+		},
+		{
+			alt:'inst',
+			link: '#',
+			img:pathImage('inst')
+		},
+		{
+			alt:'twitter',
+			link: '#',
+			img:pathImage('twitter')
+		},
+		{
+			alt:'yt',
+			link: 'https://youtube.com',
+			img:pathImage('yt')
+		},
+		{
+			alt:'in',
+			link: '#',
+			img:pathImage('in')
+		},
+	];
+	let list = [
+		{
+			name: 'About',
+			links:[
+				{text: 'Company', link: '#'},
+				{text: 'Team', link: '#'},
+				{text: 'Career', link: '#'},
+				{text: 'Blogs', link: '#'}
+			],
+		},
+		{
+			name: 'Products',
+			links:[
+				{text: 'E-Books', link: '#'},
+				{text: 'Preasantation', link: '#'},
+				{text: 'Management', link: '#'},
+				{text: 'Dashboard', link: '#'}
+			],
+		},
+			{
+			name: 'Address',
+			links:[
+				{text: 'Country Delevery', link: '#'},
+				{text: 'Counter Beach Post', link: '#'},
+				{text: 'www.itobd.com', link: '#'},
+				{text: '+880176565655', link: '#'}
+			],
+		},
+	]
+	
+footer.footer
+	.container
+		.footer__list
+			.footer__left-side
+				a(href="#").logo 
+					img(src="img/logo.png", alt="")
+				p Contrary to popular  is not sim	ply random text. It has
+				ul
+					each item in soc
+						li
+							a(href=item.link) 
+								img(src= item.img, alt=item.alt)
+
+			each item in list
+				.footer__item
+					h2= item.name
+					ul
+						each link in item.links
+							li
+								a(href=link.link)= link.text

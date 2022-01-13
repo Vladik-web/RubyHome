@@ -1,0 +1,60 @@
+.email {
+  border-radius: 10px;
+  margin-bottom: 140px;
+  .container {
+    border-radius: 10px;
+    position: relative;
+    padding: 70px 0;
+    background-color: #433e89;
+    overflow: hidden;
+  }
+  img[alt="Ellipse-1"] {
+    position: absolute;
+    right: 20px;
+    bottom: -30px;
+  }
+  img[alt="Ellipse-2"] {
+    position: absolute;
+    top: 60px;
+    left: -110px;
+  }
+  &__inner {
+    h2 {
+      font-weight: 500;
+      font-size: 44px;
+      line-height: 60px;
+      text-align: center;
+      color: #ffffff;
+      margin-bottom: 15px;
+    }
+    p {
+      max-width: 635px;
+      margin: 0 auto;
+      text-align: center;
+      color: rgba(#fff, 0.7);
+      margin-bottom: 70px;
+    }
+  }
+  &__form {
+    background-color: #fff;
+    max-width: 743px;
+    margin: 0 auto;
+    border-radius: 10px;
+    display: flex;
+    padding: 7px;
+  }
+  &__input {
+    outline: none;
+    font-family: "Poppins", sans-serif;
+    border: none;
+    padding-left: 23px;
+    flex: 1 1 auto;
+    color: #000;
+    &::placeholder {
+      color: rgba(#030a1b, 0.5);
+    }
+  }
+  button[type="submit"] {
+    padding: 16px 40px;
+  }
+}

@@ -1,0 +1,18 @@
+-
+	let images = [
+		'img/partners/image-1.png',
+		'img/partners/image-2.png',
+		'img/partners/image-3.png',
+		'img/partners/image-4.png',
+		'img/partners/image-5.png'
+	];
+section.partners
+	.container
+		.partners__inner
+			h2.title
+				span Our Partners
+			ul.partners__list
+				each image, index in images
+					li.partners__list-item(class=`item-${index+1}`)
+						a(href="#") 
+							img(src=`${image}`, alt=`image-${index+1}`)

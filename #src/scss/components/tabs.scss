@@ -1,0 +1,112 @@
+.tabs {
+  position: relative;
+
+  z-index: 2;
+
+  &__buttons {
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    ul {
+      background-color: #fff;
+      display: flex;
+      align-items: center;
+      column-gap: 44px;
+      padding: 15px 31px;
+      li {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        cursor: pointer;
+        color: $text;
+        &.active {
+          color: $prioritet;
+        }
+      }
+    }
+  }
+  &__contents {
+    box-shadow: 0px 10px 100px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 0 5px 5px 5px;
+    &-item {
+      padding: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 842px;
+      &-block {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        .select {
+          cursor: pointer;
+          font-family: "Poppins", sans-serif;
+          display: flex;
+          align-items: center;
+
+          font-size: 16px;
+          line-height: 24px;
+          column-gap: 11px;
+          margin-bottom: 10px;
+          color: $text;
+          img {
+            display: block;
+          }
+          &-wrapper {
+            position: absolute;
+            width: 100%;
+            top: 30px;
+            height: 0;
+            overflow: hidden;
+            transition: 0.25s ease;
+            &.active {
+              height: 300px;
+            }
+          }
+          &-list {
+            background-color: #fff;
+
+            box-shadow: 10px 0px 100px rgba(0, 0, 0, 0.1);
+            li {
+              padding: 10px 10px;
+              cursor: pointer;
+              transition: 0.1s ease;
+              &:hover {
+                background-color: $accent;
+                color: #fff;
+              }
+            }
+          }
+        }
+        span {
+          font-weight: 500;
+          font-size: 22px;
+          line-height: 33px;
+        }
+        button.btn-def {
+          display: flex;
+          align-items: center;
+          font-family: "Poppins", sans-serif;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 24px;
+          background-color: $accent;
+          border-radius: 10px;
+          padding-top: 15px;
+          padding-bottom: 15px;
+          color: #fff;
+          column-gap: 11px;
+          img {
+            display: block;
+          }
+        }
+      }
+      .line {
+        width: 1px;
+        height: 34px;
+        opacity: 0.1;
+        background-color: #030a1b;
+      }
+    }
+  }
+}

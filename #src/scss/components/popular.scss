@@ -1,0 +1,25 @@
+.popular {
+  padding-bottom: 140px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 70px;
+    a {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: right;
+      color: $prioritet;
+      text-decoration: none;
+    }
+  }
+  &__cards {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+/* card.scss */
+@import "card.scss";

@@ -1,0 +1,18 @@
+include mix/_review.pug
+include base/_reviews.pug
+section.reviews
+	.container
+		.reviews__inner
+			span.label Reviews 
+			h2.title
+				span Our valuable customer says
+		.reviews__list
+			each item in reviews.length ? reviews: [{name: 'Пусто',}]
+				+review(item)
+
+//{
+			image: 'img/reviews/item-1.jpg',
+			name: 'Justin Lee',
+			work:'Products Designer at Ito',
+			description: 'A good real estate agent doesn\'t disappear once the closing IN signed.Buying a bigger home doesn’t necessarily mean spendi more money.Been there. Done that. Sold. Bought Bringing It All Together.',
+		}

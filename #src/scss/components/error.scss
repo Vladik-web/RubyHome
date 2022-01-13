@@ -1,0 +1,23 @@
+.error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  img {
+    margin-bottom: 150px;
+  }
+  h1 {
+    color: $prioritet;
+    font-weight: bold;
+    font-size: 55px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+  }
+  a {
+    text-decoration: none;
+    font-size: 18px;
+    color: $text;
+  }
+}
