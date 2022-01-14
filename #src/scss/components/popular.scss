@@ -13,11 +13,24 @@
       color: $prioritet;
       text-decoration: none;
     }
+    @media (max-width: 550px) {
+      flex-direction: column;
+      align-items: flex-start;
+      h2 {
+        margin-bottom: 20px;
+      }
+    }
   }
   &__cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
+    @media (max-width: 1023px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 767px) {
+      grid-template-columns: 1fr;
+    }
   }
 }
 /* card.scss */

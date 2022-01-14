@@ -1,5 +1,6 @@
 .center {
   margin-top: 75px;
+  position: relative;
   &__inner {
     display: flex;
     align-items: center;
@@ -15,7 +16,13 @@
       max-width: 558px;
       color: #030a1b;
       margin-bottom: 30px;
-      background-color: #fff;
+      @media (max-width: 767px) {
+        font-size: 50px;
+      }
+      @media (max-width: 424px) {
+        font-size: 35px;
+        margin-bottom: 20px;
+      }
     }
     p {
       max-width: 558px;
@@ -24,11 +31,21 @@
       line-height: 27px;
       color: $text;
       margin-bottom: 40px;
+      @media (max-width: 424px) {
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+    }
+    @media (max-width: 900px) {
+      flex: 1 1 100%;
     }
   }
   &__right {
     min-height: 615px;
     position: relative;
+    @media (max-width: 900px) {
+      display: none;
+    }
 
     img {
       border-radius: 10px;

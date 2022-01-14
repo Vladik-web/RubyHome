@@ -33,6 +33,9 @@ body {
       background: url(../img/icons/home.svg) center center / cover;
     }
   }
+  @media (max-width: 424px) {
+    font-size: 40px;
+  }
 }
 .btn {
   cursor: pointer;
