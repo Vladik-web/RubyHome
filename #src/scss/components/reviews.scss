@@ -12,7 +12,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    column-gap: 10px;
+
     li {
       button {
         cursor: pointer;
@@ -27,6 +27,9 @@
         button {
           background-color: $accent;
         }
+      }
+      &:not(:last-child) {
+        margin-right: 10px;
       }
     }
   }
