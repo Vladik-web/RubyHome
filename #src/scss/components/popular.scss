@@ -15,10 +15,9 @@
     }
   }
   &__cards {
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
   }
 }
 /* card.scss */

@@ -15,7 +15,10 @@
 
     &-item {
       text-align: center;
-      font-size: 0;
+      a {
+        height: 68px;
+        display: block;
+      }
       img {
         transition: 0.25s ease;
       }

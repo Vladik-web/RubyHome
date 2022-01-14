@@ -1,13 +1,13 @@
 -
 	let menu = [
-		{text:'Home',link:'home'},
-		{text:'Properties ',link:'properties'},
-		{text:'About us', link:'aboutUs'},
-		{text:'Blog', link:'blog'}
+		{text:'Partners',link:'#partners'},
+		{text:'Properties',link:'#Properties'},
+		{text:'Featured', link:'#Featured'},
+		{text:'Reviews', link:'#Reviews'}
 	];
 nav.nav
 	ul
 		each item in menu
 			li
-				a(href="#" id=`${item.link}`)= item.text
+				a(href= item.link )= item.text
 	button.btn.btn-big Contact us

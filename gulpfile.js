@@ -57,38 +57,40 @@ function html() {
   return (
     src(path.src.html)
       /* .pipe(fileInclude()) */
+      /* .pipe(webphtml()) */
 
       .pipe(pug())
-      .pipe(webphtml())
       .pipe(dest(path.build.html))
       .pipe(browsersync.stream())
   );
 }
 
 function css() {
-  return src(path.src.css)
-    .pipe(
-      sass({
-        outputStyle: "expanded",
-      })
-    )
-    .pipe(media_queries())
-    .pipe(
-      autoprefixer({
-        overrideBrowserslist: ["last 5 versions"],
-        cascade: true,
-      })
-    )
-    .pipe(webpcss())
-    .pipe(dest(path.build.css))
-    .pipe(clean_css())
-    .pipe(
-      rename({
-        extname: ".min.css",
-      })
-    )
-    .pipe(dest(path.build.css))
-    .pipe(browsersync.stream());
+  return (
+    src(path.src.css)
+      .pipe(
+        sass({
+          outputStyle: "expanded",
+        })
+      )
+      .pipe(media_queries())
+      .pipe(
+        autoprefixer({
+          overrideBrowserslist: ["last 5 versions"],
+          cascade: true,
+        })
+      )
+      /* .pipe(webpcss()) */
+      .pipe(dest(path.build.css))
+      .pipe(clean_css())
+      .pipe(
+        rename({
+          extname: ".min.css",
+        })
+      )
+      .pipe(dest(path.build.css))
+      .pipe(browsersync.stream())
+  );
 }
 
 function js() {
@@ -106,11 +108,6 @@ function js() {
 }
 function images() {
   return src(path.src.img)
-    .pipe(
-      webp({
-        quality: 80,
-      })
-    )
     .pipe(dest(path.build.img))
     .pipe(src(path.src.img))
     .pipe(

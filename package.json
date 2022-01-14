@@ -17,13 +17,16 @@
     "gulp-file-include": "^2.3.0",
     "gulp-group-css-media-queries": "^1.2.2",
     "gulp-image-sans-guetzli": "^4.1.2",
+    "gulp-pug": "^5.0.0",
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^5.0.0",
     "gulp-uglify-es": "^3.0.0",
     "gulp-webp": "^4.0.1",
     "gulp-webp-css": "^1.1.0",
     "gulp-webp-html": "^1.0.2",
-    "sass": "^1.44.0",
-    "gulp-pug": "^5.0.0"
+    "sass": "^1.44.0"
+  },
+  "dependencies": {
+    "gulp-image-optimization": "^0.1.3"
   }
 }
