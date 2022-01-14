@@ -2,14 +2,13 @@ doctype html
 html(lang="en")
 	include blocks/mix/_head.pug
 	+head('Home')
-	body 
+	body
 		include blocks/_intro.pug
 		include blocks/_partners.pug
 		include blocks/_popular.pug
-		script(src="js/script.min.js") 
-	//-	include blocks/_featured.pug
+		include blocks/_featured.pug
 		include blocks/_reviews.pug
 		include blocks/_email.pug
 		include blocks/_footer.pug
 		include blocks/_modal.pug
-		
+		script(src="js/script.min.js")

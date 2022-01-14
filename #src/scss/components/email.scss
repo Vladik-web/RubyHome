@@ -5,6 +5,7 @@
     border-radius: 10px;
     position: relative;
     padding: 70px 0;
+
     background-color: #433e89;
     overflow: hidden;
   }
@@ -19,6 +20,9 @@
     left: -110px;
   }
   &__inner {
+    max-width: 743px;
+    margin: 0 auto;
+    padding: 0 15px;
     h2 {
       font-weight: 500;
       font-size: 44px;
@@ -26,6 +30,9 @@
       text-align: center;
       color: #ffffff;
       margin-bottom: 15px;
+      @media (max-width: 424px) {
+        padding: 0 15px;
+      }
     }
     p {
       max-width: 635px;
@@ -33,15 +40,21 @@
       text-align: center;
       color: rgba(#fff, 0.7);
       margin-bottom: 70px;
+      @media (max-width: 424px) {
+        padding: 0 15px;
+      }
     }
   }
   &__form {
     background-color: #fff;
-    max-width: 743px;
+
     margin: 0 auto;
     border-radius: 10px;
     display: flex;
     padding: 7px;
+    @media (max-width: 374px) {
+      flex-direction: column;
+    }
   }
   &__input {
     outline: none;
@@ -53,8 +66,14 @@
     &::placeholder {
       color: rgba(#030a1b, 0.5);
     }
+    @media (max-width: 374px) {
+      padding: 20px;
+    }
   }
   button[type="submit"] {
     padding: 16px 40px;
+    @media (max-width: 424px) {
+      padding: 10px 20px;
+    }
   }
 }
