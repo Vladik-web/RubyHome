@@ -1,8 +1,12 @@
 .nav {
   display: flex;
   align-items: center;
+
   ul {
     display: flex;
+    @media (max-width: 1023px) {
+      display: none;
+    }
     a {
       padding: 0 25px;
       text-decoration: none;
@@ -11,8 +15,10 @@
       line-height: 24px;
       color: $text;
       transition: 0.25s ease;
-      &:hover {
-        color: $prioritet;
+      @media (hover: hover) {
+        &:hover {
+          color: $prioritet;
+        }
       }
     }
     li {
@@ -21,6 +27,10 @@
           padding-right: 50px;
         }
       }
+    }
+  }
+  &-btn {
+    @media (max-width: 550px) {
     }
   }
 }
