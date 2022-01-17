@@ -1,6 +1,9 @@
 .email {
   border-radius: 10px;
-  margin-bottom: 140px;
+  padding-bottom: 140px;
+  @media (max-width: 550px) {
+    padding-bottom: 70px;
+  }
   .container {
     border-radius: 10px;
     position: relative;

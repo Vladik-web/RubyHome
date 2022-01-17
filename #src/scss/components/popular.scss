@@ -1,5 +1,8 @@
 .popular {
   padding-bottom: 140px;
+  @media (max-width: 550px) {
+    padding-bottom: 70px;
+  }
   &__inner {
     display: flex;
     justify-content: space-between;

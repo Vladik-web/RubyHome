@@ -1,5 +1,9 @@
 .partners {
   padding: 70px 0 140px 0;
+  @media (max-width: 550px) {
+    padding: 35px 0 70px 0;
+  }
+
   &__inner {
     h2 {
       display: block;
