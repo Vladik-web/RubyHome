@@ -18,7 +18,7 @@ ScrollReveal().reveal(".show-top-2", {
   mobile: false,
 });
 ScrollReveal().reveal(".show-left-rotate", {
-  delay: 200,
+  delay: 600,
   distance: "200px",
   easing: "ease",
   opacity: 0,
@@ -31,7 +31,7 @@ ScrollReveal().reveal(".show-left-rotate", {
   mobile: false,
 });
 ScrollReveal().reveal(".show-right-rotate", {
-  delay: 200,
+  delay: 600,
   distance: "200px",
   easing: "ease",
   opacity: 0,
@@ -44,7 +44,7 @@ ScrollReveal().reveal(".show-right-rotate", {
   mobile: false,
 });
 ScrollReveal().reveal(".show-left", {
-  delay: 200,
+  delay: 500,
   distance: "200px",
   easing: "ease",
   opacity: 0,
@@ -53,7 +53,7 @@ ScrollReveal().reveal(".show-left", {
   mobile: false,
 });
 ScrollReveal().reveal(".show-right", {
-  delay: 200,
+  delay: 500,
   reset: true,
   distance: "200px",
   easing: "ease",
@@ -71,7 +71,7 @@ ScrollReveal().reveal(".show-bottom", {
   mobile: false,
 });
 ScrollReveal().reveal(".show-center", {
-  delay: 200,
+  delay: 500,
   reset: true,
   easing: "ease",
   opacity: 0,
@@ -80,7 +80,7 @@ ScrollReveal().reveal(".show-center", {
 });
 
 ScrollReveal().reveal(".show-center-scale", {
-  delay: 200,
+  delay: 500,
   reset: true,
   easing: "ease",
 

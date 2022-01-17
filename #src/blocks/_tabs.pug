@@ -1,3 +1,4 @@
+include base/_location.pug
 .tabs.show-top-2
 	.tabs__buttons
 		ul
@@ -5,16 +6,15 @@
 			li(data-tab="1") Rent 
 			li(data-tab="2") Sell
 	.tabs__contents
-		.tabs__contents-item
+		.tabs__contents-item(data-content = 0).active
 			.tabs__contents-item-block
 				button.select Location 
 					img(src="img/icons/arrow-down.svg", alt="arrow")
 				span Dhaka
 				.select-wrapper
 					ul.select-list
-						li a
-						li b
-						li c
+						each item in locations
+							li= item
 			.line
 			.tabs__contents-item-block
 				button.select Property type
@@ -22,9 +22,9 @@
 				span Duplex
 				.select-wrapper
 					ul.select-list
-						li 1
-						li 2
-						li 3
+						li Single
+						li Triplex
+						li Quadruple
 			.line
 			.tabs__contents-item-block
 				button.select Price
@@ -32,12 +32,83 @@
 				span $4000-$8000
 				.select-wrapper
 					ul.select-list
-						li 1
-						li 2
-						li 3
+						li $1000-$2000
+						li $2000-$3000
+						li $4000-$5000
+						li $5000-$10000
 			
 			.tabs__contents-item-block
 				button.btn-def.btn
 					img(src="img/icons/search.svg", alt="search") 
 					| Search
-
+		.tabs__contents-item(data-content = 1)
+			
+			.tabs__contents-item-block
+				button.select Property type
+					img(src="img/icons/arrow-down.svg", alt="arrow")
+				span Duplex
+				.select-wrapper
+					ul.select-list
+						li Single
+						li Triplex
+						li Quadruple
+			.line
+			.tabs__contents-item-block
+				button.select Location 
+					img(src="img/icons/arrow-down.svg", alt="arrow")
+				span Dhaka
+				.select-wrapper
+					ul.select-list
+						each item in locations
+							li= item
+			.line
+			.tabs__contents-item-block
+				button.select Price
+					img(src="img/icons/arrow-down.svg", alt="arrow")
+				span $4000-$8000
+				.select-wrapper
+					ul.select-list
+						li $1000-$2000
+						li $2000-$3000
+						li $4000-$5000
+						li $5000-$10000
+			
+			.tabs__contents-item-block
+				button.btn-def.btn
+					img(src="img/icons/search.svg", alt="search") 
+					| Search
+		.tabs__contents-item(data-content = 2)
+			.tabs__contents-item-block
+				button.select Location 
+					img(src="img/icons/arrow-down.svg", alt="arrow")
+				span Dhaka
+				.select-wrapper
+					ul.select-list
+						each item in locations
+							li= item
+			.line
+			.tabs__contents-item-block
+				button.select Property type
+					img(src="img/icons/arrow-down.svg", alt="arrow")
+				span Duplex
+				.select-wrapper
+					ul.select-list
+						li Single
+						li Triplex
+						li Quadruple
+			.line
+			.tabs__contents-item-block
+				button.select Price
+					img(src="img/icons/arrow-down.svg", alt="arrow")
+				span $4000-$8000
+				.select-wrapper
+					ul.select-list
+						li $1000-$2000
+						li $2000-$3000
+						li $4000-$5000
+						li $5000-$10000
+			
+			.tabs__contents-item-block
+				button.btn-def.btn
+					img(src="img/icons/search.svg", alt="search") 
+					| Search
