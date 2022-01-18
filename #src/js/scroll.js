@@ -137,3 +137,19 @@ ScrollReveal().reveal(".item-6", {
   scale: 0.85,
   mobile: false,
 });
+
+window.addEventListener("scroll", (evt) => {
+  if (getBodyScrollTop() > 40) {
+    document.querySelector(".header").classList.add("fixed");
+  } else {
+    document.querySelector(".header").classList.remove("fixed");
+  }
+});
+
+function getBodyScrollTop() {
+  return (
+    self.pageYOffset ||
+    (document.documentElement && document.documentElement.scrollTop) ||
+    (document.body && document.body.scrollTop)
+  );
+}

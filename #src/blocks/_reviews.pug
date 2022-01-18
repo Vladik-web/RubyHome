@@ -3,10 +3,10 @@ include base/_reviews.pug
 section.reviews#Reviews
 	.container
 		.reviews__inner
-			span.label Reviews 
+			span.label.show-right Reviews 
 			h2.title
-				span Our valuable customer says
-		.reviews__list
+				span.show-left Our valuable customer says
+		.reviews__list.show-center
 			each item in reviews.length ? reviews: [{name: 'Пусто',}]
 				+review(item)
 

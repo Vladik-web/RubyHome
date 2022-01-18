@@ -108,8 +108,6 @@ function js() {
 }
 function images() {
   return src(path.src.img)
-    .pipe(dest(path.build.img))
-    .pipe(src(path.src.img))
     .pipe(
       imagemin({
         pngquant: true,
